@@ -38,7 +38,15 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", password=" + password + ", name=" + name + "]";
+	}
 	
+	public void showInfo() {
+		System.out.println("User [id=\" + id + \", password=\" + password + \", name=\" + name + \"]");
+	}
 	
 
 }
